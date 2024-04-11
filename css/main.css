@@ -46,7 +46,7 @@ h2 {
 	flex-direction: column;
 }
 
-.portfolio-page figure figcaption {
+.portfolio-page span {
 	text-transform: uppercase;
 	text-align: center;
 }
