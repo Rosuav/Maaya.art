@@ -6,7 +6,7 @@ body {
 }
 
 .landing-page {
-	background: url("images/main-bg.jpg");
+	background: url("../images/main-bg.jpg");
 	background-size: cover;
 	color: white;
 }
