@@ -1,6 +1,10 @@
+---
+category: portfolio
+---
 ## PORTFOLIO
 
-[![Digital art](images/digital-art.png) DIGITAL ART](digital-art)
-[![Traditional art](images/traditional-art.png) TRADITIONAL ART](traditional-art)
-[![Animation](images/animation.gif) ANIMATION](animation)
-[![Twitch emotes](images/twitch-emotes.png) TWITCH COMMISSIONS](twitch-emotes)
+<!-- TODO: Automate these -->
+<a href="digital-art"><figure><img src="images/digital-art.png"><figcaption>Digital Art</figure></a>
+<a href="traditional-art"><figure><img src="images/traditional-art.png"><figcaption>Traditional Art</figure></a>
+<a href="animation"><figure><img src="images/animation.gif"><figcaption>Animation</figure></a>
+<a href="twitch-emotes"><figure><img src="images/twitch-emotes.png"><figcaption>Twitch Commissions</figure></a>

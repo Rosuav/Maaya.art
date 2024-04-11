@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=quicksand&display=swap');
 
 *, ::after, ::before {box-sizing: border-box;}
+html {min-height: 100%;}
 body {
 	font-family: quicksand, sans-serif;
 	background: url("../images/bg.jpg");
 	background-size: cover;
+	background-repeat: no-repeat;
 	color: white;
+	min-height: 100%;
 }
 
 body.landing-page {
@@ -17,7 +20,7 @@ body.landing-page {
 	gap: 1em;
 }
 
-#topnav a {
+a {
 	text-transform: uppercase;
 	color: white;
 	text-decoration: none;
@@ -36,4 +39,14 @@ h1 {
 }
 h2 {
 	font-size: 30px;
+}
+
+.portfolio-page main {
+	display: flex;
+	flex-direction: column;
+}
+
+.portfolio-page figure figcaption {
+	text-transform: uppercase;
+	text-align: center;
 }
