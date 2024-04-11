@@ -44,9 +44,5 @@ h2 {
 .portfolio-page main {
 	display: flex;
 	flex-direction: column;
-}
-
-.portfolio-page span {
-	text-transform: uppercase;
 	text-align: center;
 }
