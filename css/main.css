@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=quicksand&display=swap');
+
+*, ::after, ::before {box-sizing: border-box;}
+body {
+	font-family: quicksand, sans-serif;
+}
+
+.landing-page {
+	background: "images/main-bg.jpg";
+	background-size: cover;
+}

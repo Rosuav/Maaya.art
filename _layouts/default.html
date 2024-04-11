@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html lang=en>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Maaya's Portfolio</title>
+<link rel="stylesheet" href="css/main.css">
+<link rel="icon" href="https://static-cdn.jtvnw.net/jtv_user_pictures/dfd56330-4c68-4812-aa26-51a68ee6d511-profile_image-70x70.jpg">
+</head>
+<body class="{{ page.category | default: "" }}-page">
+    <!-- Nav system replicated from devicat.art -->
+    <nav>
+      <input type=checkbox>
+      <div id=raptor_button><div></div><div></div><div></div></div>
+      <a class=keep href="/">HOME</a>
+      <div style="flex-grow: 1"></div>
+      {%- for dest in site.nav %}{%- for info in dest -%}
+        {%- if info[1] -%}
+          {%- assign name = info[0] -%}
+          {%- assign url = info[1] -%}
+        {%- else -%}
+          {%- assign name = dest -%}
+          {%- assign url = dest | downcase | replace: " ", "" -%}
+        {%- endif -%}
+        {% assign active = "" %}{% assign current = "" %}
+        {%- if page.title == name %}{% assign active = " active" %}{% assign current = '<span class="screenreader">(current)</span>' %}{% endif %}
+        <a class="{{active}}" href="{{ url }}">{{ name }}{{ current }}</a>
+      {%- endfor %}{% endfor %}
+    </nav>
+
+<main>
+{{ content }}
+</main>
+<footer>
+© 2024 Maaya Konopaskova
+</footer>
+</body>
+</html>
