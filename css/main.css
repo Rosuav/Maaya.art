@@ -8,4 +8,19 @@ body {
 .landing-page {
 	background: url("images/main-bg.jpg");
 	background-size: cover;
+	color: white;
+}
+
+#topnav {
+	display: flex;
+}
+
+#topnav a {
+	text-transform: uppercase;
+}
+#topnav a.active {
+	color: #C56D37;
+}
+#topnav a:hover {
+	color: #C5DD37; /* Need to get the right color */
 }

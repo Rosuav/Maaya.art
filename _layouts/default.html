@@ -9,10 +9,7 @@
 </head>
 <body class="{{ page.category | default: "" }}-page">
     <!-- Nav system replicated from devicat.art -->
-    <nav>
-      <input type=checkbox>
-      <div id=raptor_button><div></div><div></div><div></div></div>
-      <a class=keep href="/">HOME</a>
+    <nav id=topnav>
       <div style="flex-grow: 1"></div>
       {%- for dest in site.nav %}{%- for info in dest -%}
         {%- if info[1] -%}
@@ -26,6 +23,7 @@
         {%- if page.title == name %}{% assign active = " active" %}{% assign current = '<span class="screenreader">(current)</span>' %}{% endif %}
         <a class="{{active}}" href="{{ url }}">{{ name }}{{ current }}</a>
       {%- endfor %}{% endfor %}
+      <div style="flex-grow: 1"></div>
     </nav>
 
 <main>
