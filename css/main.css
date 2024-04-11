@@ -6,6 +6,6 @@ body {
 }
 
 .landing-page {
-	background: "images/main-bg.jpg";
+	background: url("images/main-bg.jpg");
 	background-size: cover;
 }
