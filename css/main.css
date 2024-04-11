@@ -3,12 +3,13 @@
 *, ::after, ::before {box-sizing: border-box;}
 body {
 	font-family: quicksand, sans-serif;
-}
-
-.landing-page {
-	background: url("../images/main-bg.jpg");
+	background: url("../images/bg.jpg");
 	background-size: cover;
 	color: white;
+}
+
+body.landing-page {
+	background: url("../images/main-bg.jpg");
 }
 
 #topnav {
