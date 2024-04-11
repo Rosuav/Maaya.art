@@ -13,14 +13,26 @@ body {
 
 #topnav {
 	display: flex;
+	gap: 1em;
 }
 
 #topnav a {
 	text-transform: uppercase;
+	color: white;
+	text-decoration: none;
 }
 #topnav a.active {
 	color: #C56D37;
+	text-decoration: underline;
 }
 #topnav a:hover {
-	color: #C5DD37; /* Need to get the right color */
+	color: #DD7; /* Need to get the right color */
+	text-decoration: underline;
+}
+
+h1 {
+	font-size: 85px;
+}
+h2 {
+	font-size: 30px;
 }
