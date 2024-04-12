@@ -1,7 +1,7 @@
 ---
 category: portfolio
 ---
-## PORTFOLIO
+## Portfolio
 
 * [![](images/digital-art.png) *Digital Art*](digital-art)
 * [![](images/traditional-art.png) *Traditional Art*](traditional-art)

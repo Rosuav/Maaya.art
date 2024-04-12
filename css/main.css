@@ -29,6 +29,7 @@ a {
 #topnav a.active {
 	color: #C56D37;
 	text-decoration: underline;
+	font-weight: bold;
 }
 #topnav a:hover {
 	color: #DD7; /* Need to get the right color */
@@ -55,6 +56,8 @@ h2 {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	width: fit-content;
+	margin: auto;
 }
 
 .portfolio-page ul img {
@@ -64,4 +67,12 @@ h2 {
 .portfolio-page ul em {
 	/* A bit of a cheat. These should really be figcaptions inside figures, not emphasis. */
 	font-style: normal;
+}
+
+/* Hide from display, retain for screenreaders */
+.screenreader {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
 }
