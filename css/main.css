@@ -20,11 +20,14 @@ body.landing-page {
 	padding: 4em;
 }
 
-.landing-page h1,.landing-page h2 {
-	text-align: left;
+.big-name,.big-label {
+	font-size: 85px;
 	margin: 0;
 	line-height: 1;
-	text-transform: none;
+}
+
+.big-label.big-label {
+	font-size: 30px;
 }
 
 #topnav {

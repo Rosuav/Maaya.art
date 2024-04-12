@@ -2,9 +2,12 @@
 category: landing
 ---
 
-# Maaya
-# Konopaskova
-## Digital artist
+Maaya
+{: .big-name}
+Konopaskova
+{: .big-name}
+Digital artist
+{: .big-label}
 
 <!-- Since there's no Instagram embed in this proof-of-concept, waste a bit of vertical space. -->
 
