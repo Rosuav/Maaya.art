@@ -94,3 +94,104 @@ h2 {
 	height: 1px;
 	overflow: hidden;
 }
+
+/* Gallery styles copied from DeviCat's web site */
+
+.portfolio-page p {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+/* Lightbox for image gallery */
+.portfolio-page main p {
+	max-width: 1200px;
+	margin: auto;
+	border: 2px solid rebeccapurple;
+	background: #fff1;
+}
+.portfolio-page main img {
+	max-width: 200px;
+	cursor: pointer;
+	margin: 20px;
+	border-radius: 20px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.05)
+}
+.portfolio-page img:hover {
+	box-shadow: 0 4px 7px rgba(0,0,0,0.20);
+	transform: translateY(-4px);
+	transition: 160ms ease-in-out all;
+}
+
+.wrap {
+	/* Specific to gallery */
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+/* Clicking Gallery images pops them up, fading the rest of the page. */
+/* Pre-allocate room for the scrollbars, where supported */
+html {
+	overflow: overlay;
+}
+.show-modal {
+	overflow: hidden;
+}
+#fader {
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0);
+	z-index: -1;
+	transition: background 0.25s, z-index 0.25s;
+}
+.show-modal #fader {
+	background: rgba(0, 0, 0, 0.5);
+	z-index: 1999;
+}
+#popup {
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 2000;
+	visibility: hidden;
+	overflow: auto;
+	transition: visibility 0.5s;
+}
+.show-modal #popup {
+	visibility: visible;
+}
+/* Fade the image in and pull it in from above the screen */
+#popup figure {
+	position: relative;
+	opacity: 0;
+	transition: opacity 0.2s, opacity 0.2s ease-in-out;
+	padding: 1em;
+	border: 1em solid aliceblue;
+	border-radius: 1em;
+	width: fit-content;
+	margin: 2em auto;
+}
+.show-modal #popup figure {
+	opacity: 1;
+}
+#popup figcaption {
+	margin: auto;
+	margin-bottom: 0.5em;
+	width: max-content;
+	padding: 0.5em;
+	background: aliceblue;
+	border-radius: 0.75em;
+	box-shadow: 0 5px 0 #555;
+	font-size: 1.2em;
+	color: #222;
+}
+#popup img {
+	display: block;
+	margin: auto;
+	max-width: 100%;
+}
