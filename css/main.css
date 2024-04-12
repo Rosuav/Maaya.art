@@ -62,7 +62,7 @@ h2 {
 	font-size: 30px;
 }
 
-.portfolio-page ul {
+.portfolio-menu-page ul {
 	display: flex;
 	flex-direction: column;
 	text-align: center;
@@ -70,7 +70,7 @@ h2 {
 	gap: 1em;
 }
 
-.portfolio-page ul a {
+.portfolio-menu-page ul a {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -78,11 +78,11 @@ h2 {
 	margin: auto;
 }
 
-.portfolio-page ul img {
+.portfolio-menu-page ul img {
 	width: 600px;
 }
 
-.portfolio-page ul em {
+.portfolio-menu-page ul em {
 	/* A bit of a cheat. These should really be figcaptions inside figures, not emphasis. */
 	font-style: normal;
 }
