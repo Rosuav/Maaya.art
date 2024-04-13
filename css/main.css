@@ -175,6 +175,7 @@ html {
 	border-radius: 1em;
 	width: fit-content;
 	margin: 2em auto;
+	background: black;
 }
 .show-modal #popup figure {
 	opacity: 1;
